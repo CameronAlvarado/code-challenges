@@ -25,7 +25,7 @@ def romanToNum(string):
 
     # add values to num
 
-    if index > 0:
+    # if index > 0:
 
         # check whether the len of the input is > 0
 
