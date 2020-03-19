@@ -21,27 +21,15 @@ def comp(array1, array2):
         return False
     # decalre array for squared values
     squared = []
-    # declare a bool value, will account for empty arrays
-    bool = True
     # for every number in array1...
     for num in array1:
         # square the value and append to new array
         squared.append(num**2)
-    # decalre two count vars to compare sums of each array
-    sum1 = 0
-    sum2 = 0
-    # sum nums in each array for comparison
-    for num in array2:
-        sum1 += num
-    for num in squared:
-        sum2 += num
     # if sums are not equal, automatically return False
-    if sum1 != sum2:
+    if sum(array2) != sum(squared):
         return False
     # loop through squared array and compare values to array2
     for num in squared:
-        if num in array2:
-            bool = True
-        else:
-            bool = False
-    return bool
+        if num not in array2:
+            return False
+    return True
