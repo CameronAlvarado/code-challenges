@@ -14,6 +14,9 @@ import sys
 # The function accepts STRING string as parameter.
 #
 
+
+# research stack method for bracket problem
+
 def balancedBrackets(string):
     # instantaite proper closings
     square = ("[", "]")
