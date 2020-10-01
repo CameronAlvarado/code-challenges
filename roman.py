@@ -23,13 +23,6 @@ def romanToNum(string):
         num = num + romans[i]
         # num += romans[i]
 
-    # add values to num
-
-    # if index > 0:
-
-        # check whether the len of the input is > 0
-
-        # return num
     return num
 
 
